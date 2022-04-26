@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 22.1</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      input {
+        margin-bottom: 1rem;
+      }
+      h1 {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Thank you! Your form has been submitted.</h1>
+    <form action="" id="formID">
+      <label for="name">Full Name: </label>
+      <input type="text" name="name" id="name" />
+      <label for="age">Your Age: </label>
+      <input type="text" name="age" id="age" />
+      <label for="email">Your Email: </label>
+      <input type="email" name="email" id="email" /><br />
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+  <script src="./Ex-22.1.js"></script>
+</html>
