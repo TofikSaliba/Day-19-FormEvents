@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 22.2</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .check {
+      margin: 3rem 0;
+    }
+    img {
+      display: none;
+    }
+    .appear {
+      display: block;
+    }
+  </style>
+  <body>
+    <div class="check">
+      <label for="photo">Reveal Photo ?</label>
+      <input type="checkbox" name="photo" id="photo" />
+    </div>
+    <img
+      src="https://www.survivalworld.com/wp-content/uploads/2021/10/Disappear.jpg"
+      alt="imgappear"
+    />
+  </body>
+  <script>
+    const image = document.querySelector("img");
+    const checkBox = document.querySelector("#photo");
+    checkBox.addEventListener("input", () => {
+      image.classList.toggle("appear");
+    });
+  </script>
+</html>
